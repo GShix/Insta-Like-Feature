@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(23, 33, 46);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#card{
+    height: 500px;
+    width: 350px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    position: relative;
+    /* padding: 1px; */
+}
+#card #photo{
+    /* margin-top: 48px; */
+    width: 100%;
+    height:80%;
+    object-fit: cover;
+    object-position: center;
+}
+#card #love{
+    width: 20%;
+    height: 15%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform ease 0.4s;
+    position: absolute;
+    opacity: 0;
+    filter: invert();
+}
+#profile {
+    display:flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 10px 0px 10px 10px ;
+}
+#profile #ppic{
+    width: 10%;
+    height: 30px;
+    border-radius: 50%;
+    /* padding: 6px 0px 0px 6px; */
+}
+#profile #details{
+    /* display: inline-block; */
+    margin-left: 10px;
+}
+#details h5{
+
+    display: inline;
+}
+#details h4{
+    font-weight: normal;
+    font-size: 15px;
+}
+#details #verified{
+    height: 12px;
+    width: 12px;
+    display: inline;
+}
+#profile #menu{
+    /* float: left; */
+    height: 20px;
+    filter: invert();
+    margin-left: 150px;
+    padding-right: px;
+    cursor: pointer;
+}
+#footer{
+    /* margin-top: 4px; */
+    /* display: flex; */
+    padding-left: 10px;
+    
+}
+#footer p{
+    font-weight: bold;
+}
+#desc{
+    display: flex;
+    align-items:center;
+}
+#desc p{
+    padding-left: 4px;
+    font-size: 11px;
+    font-weight: normal;
+    flex-wrap: wrap;
+    padding-right: 8px;
+}
